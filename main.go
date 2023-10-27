@@ -17,10 +17,6 @@ import (
 // Pass in directory to watch
 
 func main() {
-	for _, e := range os.Environ() {
-		log.Println(e)
-	}
-
 	directory := os.Getenv("DIRECTORY")
 	name := os.Getenv("NAME")
 	email := os.Getenv("EMAIL")
